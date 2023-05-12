@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- Ir na página do projeto e clicar em "icons". Procurar por "cart" -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Viagem dos sonhos</title>
+</head>
+
+<body>
+    <header class="container-fluid p-2 bg-warning text-center">
+        <nav class="navbar navbar-expand-sm bg-warning">
+            <div class="container-fluid justify-content-end">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="mynavbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdown03" data-bs-toggle="dropdown" aria-expanded="false">Pacotes</a>
+                            <ul class="dropdown-menu bg-warning" aria-labelledby="dropdown03">
+                              <li><a class="dropdown-item" href="#">Nacionais</a></li>
+                              <li><a class="dropdown-item" href="#">Internacionais</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="#">Taxas</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Contato</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#"><i class="bi bi-cart3"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/carousel/angra.jpg" class="d-block w-100" alt="Imagem de Angra dos Reis">
+                    <div class="carousel-caption d-none d-md-block">
+                        Entre mares e montanhas
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/carousel/cataratas-iguacu.jpg" class="d-block w-100" alt="Imagem das Cataratas do Rio Iguaçu">
+                    <div class="carousel-caption d-none d-md-block">
+                        De norte a sul
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/carousel/chapada-veadeiros.jpg" class="d-block w-100" alt="Imagem Chapada dos Veadeiros">
+                    <div class="carousel-caption d-none d-md-block">
+                        De leste a oeste
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/carousel/amazonas.jpg" class="d-block w-100" alt="Imagem do Amazonas">
+                    <div class="carousel-caption d-none d-md-block">
+                        Brasil profundo
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/carousel/nordeste.jpg" class="d-block w-100" alt="Imagem festa Nordestina">
+                    <div class="carousel-caption d-none d-md-block">
+                        Venha conhecer o Brasil!
+                </div>
+            </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </header>
+    <main>
+    <!-- Buscar exemplo no site do Bootstrap -->
+    <section class="container-fluid bg-light text-center p-5">
+        <h2>Pacotes</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, </p>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card bg-warning">
+                    <img src="img/nossos-pacotes/gramado.jpeg   " class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Gramado</h5>
+                      <h1 class="card-subtitle mb-2 text-muted">R$5.000,00</h1>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <p class="text-muted">Em até 24x</p>
+                      <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Reservar</a>
+                    </div>
+                    <!--
+                      Os atributos data* são utilizados para atribuir novas propriedades a elementos HTML5
+                      Neste caso, o data-toggle (data-bs-toggle em boostrap para evitar conflitos) diz que este botão irá acinar uma modal
+                      Já o data-target (data-bs-target no bootstrap) diz qual modal ele vai acionar -->
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card bg-warning">
+                    <img src="img/nossos-pacotes/porto-seguro.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Porto Seguro</h5>
+                      <h1 class="card-subtitle mb-2 text-muted">R$4.000,00</h1>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <p class="text-muted">Em até 24x</p>
+                      <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Reservar</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card bg-warning">
+                    <img src="img/nossos-pacotes/rio-de-janeiro.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Rio de Janeiro</h5>
+                      <h1 class="card-subtitle mb-2 text-muted">R$2.000,00</h1>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <p class="text-muted">Em até 24x</p>
+                      <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Reservar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    </div>
+    <section class="container-fluid bg-light text-center pt-5 pb-5">
+        <h2>Taxas de serviços</h2>
+
+        <table class="table table-warning table-striped table-hover table-bordered border-warning">
+            <caption>Descrição dos serviços e respectivos valores</caption>
+            <thead  class="table-secondary">
+                <tr>
+                    <th>Serviço</th>
+                    <th>Valor</th>
+                </tr>
+            </thead>
+            <tbody class="table-group-divider">
+                <tr>
+                    <td>Reserva de hotel</td>
+                    <td>R$500,00</td>
+                </tr>
+                <tr>
+                    <td>Compra de passagens</td>
+                    <td>R$1000,00</td>
+                </tr>
+                <tr>
+                    <td>Aluguel de carros</td>
+                    <td>R$300,00</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <section class="container-fluid bg-warning p-5">
+        <h2 class="text-center">Faça já seu orçamento</h2>
+        <form method="GET" action="">
+            <fieldset>
+                <legend>Dados pessoais</legend>
+                <div class="mb-3">
+                    <label class="form-label" for="nome">Nome:</label>
+                    <input type="text" class="form-control" name="nome" id="nome">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="email">
+                    Email:</label>
+                    <input type="email" class="form-control" name="email" placeholder="email@xyz.com" id="email" required>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="dataIda">Data de ida:</label>
+                    <input type="date"  class="form-control" name="dataIda" id="dataIda">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="dataVolta">Data de volta:</label>
+                    <input type="date"  class="form-control" name="dataVolta" id="dataVolta">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="comentario">Comentário:</label>
+                    <textarea name="commentario" id="comentario"  class="form-control" rows="5"></textarea>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Qual(ais) serviços(s) você deseja orçar?</legend>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" name="compraPassagens" id="compraPassagens" value="compraPassagens">
+                    <label class="form-check-label" for="compraPassagens">Compra de passagens</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" name="reservaHospedagem" id="reservaHospedagem" value="reservaHospedagem">
+                    <label class="form-check-label" for="reservaHospedagem">Reserva de hospedagem</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" name="reservaHospedagem" id="aluguelVeiculos" value="aluguelVeiculos">
+                    <label class="form-check-label" for="reservaHospedagem">Aluguel de veículos</label>
+                </div>
+            </fieldset>
+            <br>
+
+            <br>
+            <button class="btn btn-secondary">Salvar</button>
+        </form>
+    </section>
+    </main>
+    <footer class="container-fluid bg-warning text-center">
+        Desenvolvido por Lívia Gouvêa
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+</body>
+
+<!-- Buscar exemplo no site do bootstrap -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Suas compras</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            Produto xxxxx adicionado no carrinho!
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Continuar compando</button>
+          <a href="checkout.html" class="btn btn-success">Finalizar compra</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</html>
